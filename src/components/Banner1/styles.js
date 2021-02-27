@@ -6,6 +6,7 @@ import Logo2 from '../../assets/logo2.png';
 export const Container = styled.div`
   height: 30vh;
   background-image: url(${BannerBackground});
+  background-color: black;
   background-position: center;
   display: flex;
   align-items: center;
@@ -18,6 +19,7 @@ export const LogoAndTitle = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
 `;
 
 export const Logo = styled.img.attrs({
