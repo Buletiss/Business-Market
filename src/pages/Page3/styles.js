@@ -17,7 +17,7 @@ export const LeftSide = styled.div`
 export const RectangleWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-left: -30px;
+  margin-left: -90px;
 `;
 
 export const RectangleLeft = styled.img.attrs({
@@ -27,10 +27,44 @@ export const RectangleLeft = styled.img.attrs({
 export const RectangleRight = styled.img.attrs({
   src: Rectangle,
 })`
-  margin-left: -230px;
+  margin-left: -250px;
 `;
 
-export const TextWrapper = styled.div``;
+export const TextWrapper = styled.div`
+  color: white;
+  position: absolute;
+  width: 463px;
+  height: 285px;
+  left: 384px;
+  top: 2724px;
+
+  font-size: 15px;
+  line-height: 180%;
+`;
+
+export const Title = styled.div`
+  font-family: 'Oswald';
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 300%;
+  margin-top: -150px;
+`;
+
+export const Text = styled.div`
+  font-family: 'Fira Sans';
+  margin-top: 100px;
+  width: 463px;
+  height: 283px;
+`;
+
+export const PrimaryText = styled.strong`
+  color: ${(props) => props.theme.colors.primary};
+`;
+
+export const LastText = styled.div`
+  margin-top: 50px;
+`;
 
 export const RightSide = styled.div`
   display: flex;
