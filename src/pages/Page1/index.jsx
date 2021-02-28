@@ -11,19 +11,21 @@ const Page1 = () => {
         <S.RightTriangle />
         <S.RightTriangle />
         <S.Column1>
-          <S.LeftTopWrapper>
+          <S.TitleTopWrapper>
             <h1>
-              standard Lorem Ipsum Excepteur sint occaec Lorem ipsum dolor sit
-              ame onsectetur adipiscing elit dolore eu fugiat nulla pariatur!
+              standard Lorem Ipsum <br/> <S.StyledTitle> Excepteur sint occaec </S.StyledTitle><br/>Lorem ipsum dolor sit
+              ame onsectetur adipiscing elit<br/>dolore eu fugiat nulla pariatur!
             </h1>
+          </S.TitleTopWrapper>
+          <S.TextTopWrapper>
             <p>
               popularised in the 1960s with the release of Letraset sheets
               containing Lorem Ipsum passages, and more recently with desktop
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum.
             </p>
+            </S.TextTopWrapper>
             <S.Button>Lorem ipsum idolor</S.Button>
-          </S.LeftTopWrapper>
         </S.Column1>
         <S.Column2>
           <S.PeopleImage />

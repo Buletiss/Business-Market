@@ -50,7 +50,7 @@ export const HamburguerButton = styled.img.attrs({
   &:hover {
     cursor: pointer;
   }
-  @media (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;

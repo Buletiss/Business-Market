@@ -15,7 +15,10 @@ export const LeftTriangle = styled.img.attrs({
 })`
   position: absolute;
   left: 0;
-  /* width: 12rem; */
+
+  @media screen and (max-width: 768px) {
+    width: 20%;
+  }
 `;
 
 export const RightTriangle = styled.img.attrs({
@@ -24,6 +27,10 @@ export const RightTriangle = styled.img.attrs({
   position: absolute;
   right: 0;
   bottom: 100px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Column1 = styled.div`
@@ -32,38 +39,51 @@ export const Column1 = styled.div`
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
-  padding-right: 5rem;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 150px;
+    background: red;
+  }
 `;
 
-export const LeftTopWrapper = styled.div`
+export const TitleTopWrapper = styled.div`
   display: flex;
+  width: 600px;
   flex-direction: column;
-  max-width: 30rem;
-  margin-top: -2rem;
   justify-content: space-between;
-  height: 50vh;
-
   font-family: Oswald;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 155.5%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+`;
+
+export const TextTopWrapper = styled.div`
+  position: relative;
+  left: -100px;
+  width: 500px;
+  padding: 50px 0px 100px 0px;
+  font-family: 'Fira Sans'
+  font-size: 13px;
+  line-height: 180%
+`;
+
+export const StyledTitle = styled.strong`
+  color: ${(props) => props.theme.colors.primary};
+  background-color: black;
+  border-radius: 8px;
 `;
 
 export const PeopleImage = styled.img.attrs({
   src: People,
 })`
-  @media (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
 export const Column2 = styled.div`
   width: 50%;
-
   display: flex;
-
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -74,7 +94,8 @@ export const Button = styled.button`
   height: 60px;
   border: 0;
   border-radius: 30px;
-
+  position: relative;
+  left: -100px;
   font-family: 'Source Sans Pro'
   font-style: normal;
   font-weight: bold;
