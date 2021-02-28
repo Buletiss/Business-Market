@@ -9,7 +9,9 @@ const Banner2 = () => {
     </strong></p><b>publishing software like Aldus PageMaker including versions of Lorem Ipsum.</b>
 </S.TextWrapper>
     <S.LogoAndTitle>
+    <S.TitleWrapper>
       <h1>specimen book. It has survived not only fiver...</h1>
+      </S.TitleWrapper>
     <S.StickImg />
     </S.LogoAndTitle>
   </S.Container>
