@@ -5,9 +5,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media (min-width: 576px) {
-  }
 `;
 
 export const Logo = styled.img.attrs({
@@ -21,9 +18,10 @@ export const ButtonsContainer = styled.div`
   width: 20%;
   align-items: center;
 
-  @media (min-width: 768px) {
-    margin-top: -80px;
-    width: 40%;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    margin: 60px;
+    width: 30%;
   }
 `;
 
@@ -51,6 +49,6 @@ export const HamburguerButton = styled.img.attrs({
     cursor: pointer;
   }
   @media screen and (max-width: 768px) {
-    display: none;
+    margin: 20px;
   }
 `;
