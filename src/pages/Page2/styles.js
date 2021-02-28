@@ -41,26 +41,16 @@ export const RightSide = styled.div`
 export const HomemImage = styled.img.attrs({
   src: Homem,
 })`
-  width: 459px;
-  height: 543px;
-  z-index: 100;
-  position: relative;
-`;
-
-export const HomemAbsoluteTriangle = styled.img.attrs({
-  src: TriangleGreen,
-})`
-  position: absolute;
-  left: 15rem;
-  bottom: -35rem;
-  z-index: 1;
+  width: 75%;
+  margin-bottom: 50px;
+  margin-top: -20px;
 `;
 
 export const SocialMediaWrapper = styled.div`
   display: flex;
   justify-content: center;
-  width: 200px;
-  margin-left: 8rem;
+  width: 250px;
+  margin-left: 14rem;
   justify-content: space-around;
 `;
 
@@ -72,7 +62,6 @@ export const IconWrapper = styled.a`
   height: 52px;
   background: linear-gradient(59.46deg, #1d737e -67.96%, #4fb9c7 103.75%);
   border-radius: 50%;
-
   &:hover {
     cursor: pointer;
   }

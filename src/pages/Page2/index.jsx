@@ -6,12 +6,7 @@ const Page2 = () => {
   return (
     <S.Container>
       <S.LeftSide>
-        <img
-          src="https://media.discordapp.net/attachments/431488246891937794/815272877150306314/image_1.png"
-          alt="a"
-        />
-        {/* <S.HomemAbsoluteTriangle />
-        <S.HomemImage /> */}
+        <S.HomemImage />
         <S.SocialMediaWrapper>
           <S.IconWrapper>
             <S.FacebookLogo />

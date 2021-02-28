@@ -42,8 +42,7 @@ export const Column1 = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
-    margin: 150px;
-    background: red;
+    margin: 10px 300px 20px;
   }
 `;
 
@@ -55,6 +54,10 @@ export const TitleTopWrapper = styled.div`
   font-family: Oswald;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    width: 120%;
+  }
 `;
 
 export const TextTopWrapper = styled.div`
@@ -95,7 +98,7 @@ export const Button = styled.button`
   border: 0;
   border-radius: 30px;
   position: relative;
-  left: -100px;
+  left: -120px;
   font-family: 'Source Sans Pro'
   font-style: normal;
   font-weight: bold;
@@ -103,6 +106,5 @@ export const Button = styled.button`
   line-height: 428.2%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   background: ${(props) => props.theme.colors.primary};
 `;
