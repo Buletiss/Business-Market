@@ -53,7 +53,11 @@ export const LeftTopWrapper = styled.div`
 
 export const PeopleImage = styled.img.attrs({
   src: People,
-})``;
+})`
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
 
 export const Column2 = styled.div`
   width: 50%;

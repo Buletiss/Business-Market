@@ -1,4 +1,12 @@
-import React from 'react'
+import React from 'react';
+
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
+
 
 import * as S from './styles'
 
@@ -32,7 +40,42 @@ const Page3 = () => {
       </S.TextWrapper>
       </S.RectangleWrapper>
     </S.LeftSide>
-    <S.RightSide></S.RightSide>
+    <S.RightSide>
+    <S.TitleRight>
+        <h1>MECENTLY WITH DESKTOP <br/>PUBLISHING SOFTWARE LIKE:</h1>
+      </S.TitleRight>
+      <S.TimeLineWrapper>
+      <Timeline>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>2018</TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>2015</TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>2010</TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary"/>
+        </TimelineSeparator>
+        <TimelineContent>2008</TimelineContent>
+      </TimelineItem>      
+    </Timeline>
+    </S.TimeLineWrapper>
+    </S.RightSide>
   </S.Container>
   )
 }

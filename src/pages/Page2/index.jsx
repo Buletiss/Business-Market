@@ -7,7 +7,7 @@ const Page2 = () => {
     <S.Container>
       <S.LeftSide>
         <img
-          src="https://cdn.discordapp.com/attachments/263762535763673089/814680563977289739/unknown.png"
+          src="https://media.discordapp.net/attachments/431488246891937794/815272877150306314/image_1.png"
           alt="a"
         />
         {/* <S.HomemAbsoluteTriangle />

@@ -26,7 +26,7 @@ export const RightSide = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  width: 55%;
   flex: 1;
   font-family: 'Oswald';
   font-style: normal;

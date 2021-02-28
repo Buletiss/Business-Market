@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import Rectangle from '../../assets/Rectangle.png';
+import LineGreen from '../../assets/faixaVerde.png';
 
 export const Container = styled.div`
   height: 84vh;
@@ -68,6 +69,28 @@ export const LastText = styled.div`
 
 export const RightSide = styled.div`
   display: flex;
+  flex-direction: column;
   width: 50%;
   background: black;
+`;
+
+export const TitleRight = styled.div`
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 140px;
+  margin-left: -200px;
+  letter-spacing: 0.2em;
+  font-size: 13px;
+  font-family: 'Oswald';
+`;
+
+export const FaixaVerde = styled.img.attrs({
+  src: LineGreen,
+})``;
+
+export const TimeLineWrapper = styled.div``;
+
+export const TimelineDot = styled.div`
+  background: red;
 `;
