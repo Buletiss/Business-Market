@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+
+import TriangleLogo from '../../assets/TriangleLogo.png';
 import Hamburguer from '../../assets/Hamburguer.png';
 
 export const Container = styled.div`
@@ -8,8 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img.attrs({
-  src:
-    'https://media.discordapp.net/attachments/263762535763673089/814667980947324928/TriangleLogo.png',
+  src: TriangleLogo,
 })``;
 
 export const ButtonsContainer = styled.div`
