@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Homem from '../../assets/Homem.png';
-import TriangleGreen from '../../assets/triangleGreen.png';
 import FacebookIcon from '../../assets/facebookIcon.png';
 import TwitterIcon from '../../assets/twitterIcon.png';
 import InstagramIcon from '../../assets/instagramIcon.png';
@@ -11,6 +10,12 @@ export const Container = styled.div`
   justify-content: space-between;
   height: 100vh;
   margin-top: -15rem;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const LeftSide = styled.div`
@@ -20,6 +25,12 @@ export const LeftSide = styled.div`
   justify-content: flex-start;
   padding-right: 6rem;
   width: 50%;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    margin-top: -100px;
+  }
 `;
 
 export const RightSide = styled.div`
@@ -27,7 +38,6 @@ export const RightSide = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 55%;
-  flex: 1;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 200;
@@ -36,6 +46,14 @@ export const RightSide = styled.div`
   text-transform: uppercase;
   max-height: 600px;
   padding: 10px 80px;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: 50%;
+    position: relative;
+    top: -160px;
+    font-size: 15px;
+  }
 `;
 
 export const HomemImage = styled.img.attrs({
@@ -44,6 +62,12 @@ export const HomemImage = styled.img.attrs({
   width: 75%;
   margin-bottom: 50px;
   margin-top: -20px;
+
+  @media screen and (max-width: 768px) {
+    width: 500px;
+    display: flex;
+    margin-left: -100px;
+  }
 `;
 
 export const SocialMediaWrapper = styled.div`
@@ -52,6 +76,11 @@ export const SocialMediaWrapper = styled.div`
   width: 250px;
   margin-left: 14rem;
   justify-content: space-around;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-left: 2rem;
+  }
 `;
 
 export const IconWrapper = styled.a`
