@@ -20,6 +20,7 @@ export const LogoAndTitle = styled.div`
   align-items: center;
   justify-content: space-between;
   color: white;
+  font-family: 'Oswald';
 `;
 
 export const Logo = styled.img.attrs({
@@ -35,10 +36,8 @@ export const TextWrapper = styled.div`
   font-weight: 600;
   font-size: 15px;
   line-height: 180%;
-
   max-width: 600px;
-
-  // color: primary;
+  color: white;
 `;
 
 export const PrimaryText = styled.strong`
